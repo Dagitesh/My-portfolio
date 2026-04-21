@@ -2,25 +2,52 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --paper: #ffffff;
+  --foreground: #0a0a0a;
+  --muted: #52525b;
+  --gold: #c88c17;
+  --pink: #ff4fa3;
+  --orange: #ff7a00;
+  --green: #b6ff6c;
+  --border-subtle: rgba(10, 10, 10, 0.08);
+  --shadow-soft: 0 24px 80px rgba(10, 10, 10, 0.06);
+  --shadow-card: 0 16px 48px rgba(10, 10, 10, 0.08);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-muted: var(--muted);
+  --color-gold: var(--gold);
+  --color-pink: var(--pink);
+  --color-orange: var(--orange);
+  --color-green: var(--green);
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-playfair), ui-serif, Georgia, serif;
+  --font-accent: var(--font-accent), ui-sans-serif, system-ui, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+::selection {
+  background: rgba(200, 140, 23, 0.18);
+  color: var(--foreground);
+}
+
+@media (pointer: fine) {
+  body[data-cursor="true"] {
+    cursor: none;
+  }
+  body[data-cursor="true"] a,
+  body[data-cursor="true"] button {
+    cursor: none;
+  }
 }
