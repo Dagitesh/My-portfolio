@@ -5,5 +5,5 @@ export const siteConfig = {
   email: "Dagmawitteshale@outlook.com",
   phone: "+251970753418",
   phoneTel: "+251970753418",
-  github: "https://github.com/dagmawitteshale",
+  github: "https://github.com/dagitesh",
 } as const;
