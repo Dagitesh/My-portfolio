@@ -14,6 +14,9 @@ export function Footer() {
             <p className="font-serif text-xl text-foreground sm:text-2xl">{siteConfig.name}</p>
             <p className="mt-1 text-sm text-muted">{siteConfig.title}</p>
             <div className="mt-6 flex flex-wrap gap-6 text-sm text-muted">
+              <Link href="/gallery" className="transition-colors hover:text-foreground">
+                Gallery
+              </Link>
               <Link href="/#work" className="transition-colors hover:text-foreground">
                 Work
               </Link>

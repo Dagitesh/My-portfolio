@@ -6,6 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { siteConfig } from "@/lib/site";
 
 const links = [
+  { href: "/gallery", label: "Gallery" },
   { href: "/#work", label: "Work" },
   { href: "/#about", label: "About" },
   { href: "/#experience", label: "Experience" },
