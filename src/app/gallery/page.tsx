@@ -15,7 +15,6 @@ export default async function GalleryPage() {
           <SectionHeading
             eyebrow="Gallery"
             title="Designs, visuals, and experiments."
-            description="Upload images into public/gallery to keep this page updated."
           />
           <div className="flex flex-wrap items-center gap-3 text-sm text-muted">
             <Link href="/#work" className="underline-offset-4 transition-colors hover:text-gold hover:underline">

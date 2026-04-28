@@ -143,7 +143,7 @@ export function StickerLayer() {
               parallax.dy * (idx % 2 ? 1 : -0.7)
             }px, 0)`,
           }}
-          className="absolute"
+          className="absolute hidden sm:block"
         >
           <div
             className={[
